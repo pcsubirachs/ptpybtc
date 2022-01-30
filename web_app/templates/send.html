@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Simp</title>
+		<link rel="stylesheet" href="static/assets/css/main.css">
+	</head>
+<body>
+    <h2>{{btc_balance}} BTC</h2>
+    <h3>{{usd_balance}} USD</h3>
+
+		<form action="/send" method="POST">
+            <label>Send to Address</label><br>
+            <input type="text" id="send_to_address" name="send_to_address"><br><br>
+            <label>Amount</label><br>
+            <input type="number" step="any" id="amount" name="amount"><br><br>
+            <input type="submit" value="SEND" name="send_tx">
+		</form>
+
+        <br><br>
+
+	    <form action="/" method="GET">
+        	<input type="submit" value="HOME" name="home">
+        </form>
+
+		
+</body>
+</html>
