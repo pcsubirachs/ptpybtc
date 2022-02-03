@@ -2,8 +2,6 @@ from flask import Flask, Blueprint, jsonify, request, render_template, current_a
 from mnemonic import Mnemonic
 from flask_qrcode import QRcode
 
-from bit import PrivateKeyTestnet
-from bit import *
 
 #
 # User Wallet
@@ -12,11 +10,11 @@ from bit import *
 #
 # Place WIF as a string inside PrivateKeyTestnet() brackets
 #
-wallet = PrivateKeyTestnet('cSs7bQAxg2cfHaCQbUVkrmbNouCupuabpu9ZWXaXoAT8ak8K3BrE')
-btc_balance = wallet.get_balance('btc')
-usd_balance = wallet.balance_as('usd')
-address = wallet.segwit_address
-wif = wallet.to_wif()
+wallet = ''
+btc_balance = ''
+usd_balance = ''
+address = ''
+wif = ''
 
 #
 # Routing
